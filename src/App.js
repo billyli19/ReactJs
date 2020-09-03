@@ -5,6 +5,7 @@ import Greet from "./Component/Greet";
 import Welcome from "./Component/Welcome";
 import Hello from "./Component/Hello";
 import Message from "./Component/Message";
+import Counter from "./Component/Counter";
 
 // Functional Component
 function GreetComponent() {
@@ -52,6 +53,15 @@ function MessageComponent() {
   );
 }
 
+// setState Compoment
+function CounterComponent() {
+  return (
+    <div>
+      <Counter />
+    </div>
+  );
+}
+
 function App() {
   return (
     <div className="App">
@@ -62,6 +72,8 @@ function App() {
       {/* <HelloComponent /> */}
 
       {/* <MessageComponent /> */}
+
+      <CounterComponent />
     </div>
   );
 }
