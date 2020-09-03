@@ -9,7 +9,17 @@ import Hello from "./Component/Hello";
 function GreetComponent() {
   return (
     <div>
-      <Greet />
+      <Greet name="Bruce" heroName="Batman">
+        <p>This is children props</p>
+      </Greet>
+      <Greet name="Clark" heroName="Superman">
+        <button>Action</button>
+      </Greet>
+      <Greet name="Diana" heroName="Wonderwoman">
+        <Welcome name="Tony" heroName="Iron Man" />
+        <Welcome name="Steve" heroName="Captain America" />
+        <Welcome name="Nathasha" heroName="Blackwidow" />
+      </Greet>
     </div>
   );
 }
@@ -35,7 +45,7 @@ function HelloComponent() {
 function App() {
   return (
     <div className="App">
-      {/* <GreetComponent /> */}
+      <GreetComponent />
 
       {/* <WelcomeComponent /> */}
 
