@@ -10,6 +10,7 @@ import FunctionClick from "./Component/FunctionClick";
 import ClassClick from "./Component/ClassClick";
 import EventBind from "./Component/EventBind";
 import ParentComponent from "./Component/ParentComponent";
+import UserGreeting from "./Component/UserGreeting";
 
 // Functional Component
 function GreetComponent() {
@@ -101,6 +102,15 @@ function ParentMethodComponent() {
   );
 }
 
+//Conditional Rendering
+function UserGreetingComponent() {
+  return (
+    <div>
+      <UserGreeting />
+    </div>
+  );
+}
+
 function App() {
   return (
     <div className="App">
@@ -120,7 +130,9 @@ function App() {
 
       {/* <EventBindComponent /> */}
 
-      <ParentMethodComponent />
+      {/* <ParentMethodComponent /> */}
+
+      <UserGreetingComponent />
     </div>
   );
 }
