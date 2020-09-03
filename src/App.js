@@ -11,6 +11,7 @@ import ClassClick from "./Component/ClassClick";
 import EventBind from "./Component/EventBind";
 import ParentComponent from "./Component/ParentComponent";
 import UserGreeting from "./Component/UserGreeting";
+import NameList from "./Component/NameList";
 
 // Functional Component
 function GreetComponent() {
@@ -111,6 +112,15 @@ function UserGreetingComponent() {
   );
 }
 
+//List Rendering
+function NameListComponent() {
+  return (
+    <div>
+      <NameList />
+    </div>
+  );
+}
+
 function App() {
   return (
     <div className="App">
@@ -132,7 +142,9 @@ function App() {
 
       {/* <ParentMethodComponent /> */}
 
-      <UserGreetingComponent />
+      {/* <UserGreetingComponent /> */}
+
+      <NameListComponent />
     </div>
   );
 }
