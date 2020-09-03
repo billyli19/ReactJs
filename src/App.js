@@ -73,7 +73,7 @@ function App() {
 
       {/* <MessageComponent /> */}
 
-      <CounterComponent />
+      {/* <CounterComponent /> */}
     </div>
   );
 }
