@@ -9,6 +9,7 @@ import Counter from "./Component/Counter";
 import FunctionClick from "./Component/FunctionClick";
 import ClassClick from "./Component/ClassClick";
 import EventBind from "./Component/EventBind";
+import ParentComponent from "./Component/ParentComponent";
 
 // Functional Component
 function GreetComponent() {
@@ -91,6 +92,15 @@ function EventBindComponent() {
   );
 }
 
+//Methods as props
+function ParentMethodComponent() {
+  return (
+    <div>
+      <ParentComponent />
+    </div>
+  );
+}
+
 function App() {
   return (
     <div className="App">
@@ -108,7 +118,9 @@ function App() {
 
       {/* <ClassClickComponent /> */}
 
-      <EventBindComponent />
+      {/* <EventBindComponent /> */}
+
+      <ParentMethodComponent />
     </div>
   );
 }

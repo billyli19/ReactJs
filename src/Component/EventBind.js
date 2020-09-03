@@ -36,7 +36,7 @@ class EventBind extends Component {
         {/* Second approach */}
         {/* <button onClick={() => this.clickHandler()}>Click</button> */}
 
-        {/* Third approach (step 1) */}
+        {/* Official Third approach (step 1) */}
         {/* <button onClick={this.clickHandler}>Click</button> */}
 
         {/* Forth approach (step 1)*/}
