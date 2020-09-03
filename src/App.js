@@ -6,6 +6,8 @@ import Welcome from "./Component/Welcome";
 import Hello from "./Component/Hello";
 import Message from "./Component/Message";
 import Counter from "./Component/Counter";
+import FunctionClick from "./Component/FunctionClick";
+import ClassClick from "./Component/ClassClick";
 
 // Functional Component
 function GreetComponent() {
@@ -62,6 +64,23 @@ function CounterComponent() {
   );
 }
 
+// Event Handeling
+function FunctionClickComponent() {
+  return (
+    <div>
+      <FunctionClick />
+    </div>
+  );
+}
+
+function ClassClickComponent() {
+  return (
+    <div>
+      <ClassClick />
+    </div>
+  );
+}
+
 function App() {
   return (
     <div className="App">
@@ -74,6 +93,10 @@ function App() {
       {/* <MessageComponent /> */}
 
       {/* <CounterComponent /> */}
+
+      {/* <FunctionClickComponent /> */}
+
+      <ClassClickComponent />
     </div>
   );
 }
