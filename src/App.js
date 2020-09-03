@@ -4,6 +4,7 @@ import "./App.css";
 import Greet from "./Component/Greet";
 import Welcome from "./Component/Welcome";
 import Hello from "./Component/Hello";
+import Message from "./Component/Message";
 
 // Functional Component
 function GreetComponent() {
@@ -42,14 +43,25 @@ function HelloComponent() {
   );
 }
 
+// State Component
+function MessageComponent() {
+  return (
+    <div>
+      <Message />
+    </div>
+  );
+}
+
 function App() {
   return (
     <div className="App">
-      <GreetComponent />
+      {/* <GreetComponent /> */}
 
       {/* <WelcomeComponent /> */}
 
-      {/* <Hello /> */}
+      {/* <HelloComponent /> */}
+
+      {/* <MessageComponent /> */}
     </div>
   );
 }
