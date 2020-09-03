@@ -8,6 +8,7 @@ import Message from "./Component/Message";
 import Counter from "./Component/Counter";
 import FunctionClick from "./Component/FunctionClick";
 import ClassClick from "./Component/ClassClick";
+import EventBind from "./Component/EventBind";
 
 // Functional Component
 function GreetComponent() {
@@ -81,6 +82,15 @@ function ClassClickComponent() {
   );
 }
 
+// Binding Event Handlers
+function EventBindComponent() {
+  return (
+    <div>
+      <EventBind />
+    </div>
+  );
+}
+
 function App() {
   return (
     <div className="App">
@@ -96,7 +106,9 @@ function App() {
 
       {/* <FunctionClickComponent /> */}
 
-      <ClassClickComponent />
+      {/* <ClassClickComponent /> */}
+
+      <EventBindComponent />
     </div>
   );
 }
