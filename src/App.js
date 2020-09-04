@@ -16,6 +16,7 @@ import Stylesheet from "./Component/Stylesheet";
 import InLine from "./Component/InLine";
 import "./appStyles.css";
 import styles from "./appStyles.module.css";
+import Form from "./Component/Form";
 
 // Functional Component
 function GreetComponent() {
@@ -98,7 +99,7 @@ function EventBindComponent() {
   );
 }
 
-//Methods as props
+// Methods as props
 function ParentMethodComponent() {
   return (
     <div>
@@ -107,7 +108,7 @@ function ParentMethodComponent() {
   );
 }
 
-//Conditional Rendering
+// Conditional Rendering
 function UserGreetingComponent() {
   return (
     <div>
@@ -116,7 +117,7 @@ function UserGreetingComponent() {
   );
 }
 
-//List Rendering
+// List Rendering
 function NameListComponent() {
   return (
     <div>
@@ -161,6 +162,15 @@ function SuccesModuleStyleSheet() {
   );
 }
 
+// Form component
+function FormComponent() {
+  return (
+    <div>
+      <Form />
+    </div>
+  );
+}
+
 function App() {
   return (
     <div className="App">
@@ -190,9 +200,11 @@ function App() {
 
       {/* <InLineComponent /> */}
 
-      <ErrorStyleSheet />
+      {/* <ErrorStyleSheet /> */}
 
-      <SuccesModuleStyleSheet />
+      {/* <SuccesModuleStyleSheet /> */}
+
+      <FormComponent />
     </div>
   );
 }
