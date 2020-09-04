@@ -12,6 +12,10 @@ import EventBind from "./Component/EventBind";
 import ParentComponent from "./Component/ParentComponent";
 import UserGreeting from "./Component/UserGreeting";
 import NameList from "./Component/NameList";
+import Stylesheet from "./Component/Stylesheet";
+import InLine from "./Component/InLine";
+import "./appStyles.css";
+import styles from "./appStyles.module.css";
 
 // Functional Component
 function GreetComponent() {
@@ -121,6 +125,42 @@ function NameListComponent() {
   );
 }
 
+// Stylsheet
+function StylesheetComponent() {
+  return (
+    <div>
+      <Stylesheet primary={true} />
+    </div>
+  );
+}
+
+// InLine
+function InLineComponent() {
+  return (
+    <div>
+      <InLine />
+    </div>
+  );
+}
+
+// Error Style sheet
+function ErrorStyleSheet() {
+  return (
+    <div>
+      <h1 className="error">Error</h1>
+    </div>
+  );
+}
+
+// Success Style sheet
+function SuccesModuleStyleSheet() {
+  return (
+    <div>
+      <h1 className={styles.success}>Success</h1>
+    </div>
+  );
+}
+
 function App() {
   return (
     <div className="App">
@@ -144,7 +184,15 @@ function App() {
 
       {/* <UserGreetingComponent /> */}
 
-      <NameListComponent />
+      {/* <NameListComponent /> */}
+
+      {/* <StylesheetComponent /> */}
+
+      {/* <InLineComponent /> */}
+
+      <ErrorStyleSheet />
+
+      <SuccesModuleStyleSheet />
     </div>
   );
 }
