@@ -18,6 +18,8 @@ import "./appStyles.css";
 import styles from "./appStyles.module.css";
 import Form from "./Component/Form";
 import LifecycleA from "./Component/LifecycleA";
+import FragmentDemo from "./Component/FragmentDemo";
+import Table from "./Component/Table";
 
 // Functional Component
 function GreetComponent() {
@@ -181,6 +183,23 @@ function LifeCycleA() {
   );
 }
 
+// Fragments Demo
+function FragmentsDemoComponent() {
+  return (
+    <div>
+      <FragmentDemo />
+    </div>
+  );
+}
+
+function TableComponent() {
+  return (
+    <div>
+      <Table />
+    </div>
+  );
+}
+
 function App() {
   return (
     <div className="App">
@@ -216,7 +235,11 @@ function App() {
 
       {/* <FormComponent /> */}
 
-      <LifecycleA />
+      {/* <LifecycleA /> */}
+
+      {/* <FragmentsDemoComponent /> */}
+
+      <TableComponent />
     </div>
   );
 }
