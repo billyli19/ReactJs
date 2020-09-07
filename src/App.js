@@ -211,6 +211,15 @@ function PureComponent() {
   );
 }
 
+// Parent Component
+function ParentCompComponent() {
+  return (
+    <div>
+      <ParentComp />
+    </div>
+  );
+}
+
 function App() {
   return (
     <div className="App">
@@ -254,8 +263,9 @@ function App() {
 
       {/* <PureComponent /> */}
 
-      <ParentComp />
-    </div>
+      {/* <ParentCompComponent /> */}
+      
+      
   );
 }
 
