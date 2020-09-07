@@ -17,6 +17,7 @@ import InLine from "./Component/InLine";
 import "./appStyles.css";
 import styles from "./appStyles.module.css";
 import Form from "./Component/Form";
+import LifecycleA from "./Component/LifecycleA";
 
 // Functional Component
 function GreetComponent() {
@@ -171,7 +172,14 @@ function FormComponent() {
   );
 }
 
-
+// Life Cycle Methods
+function LifeCycleA() {
+  return (
+    <div>
+      <LifecycleA />
+    </div>
+  );
+}
 
 function App() {
   return (
@@ -207,6 +215,8 @@ function App() {
       {/* <SuccesModuleStyleSheet /> */}
 
       {/* <FormComponent /> */}
+
+      <LifecycleA />
     </div>
   );
 }
