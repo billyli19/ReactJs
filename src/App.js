@@ -23,6 +23,8 @@ import Table from "./Component/Table";
 import PureComp from "./Component/PureComp";
 import ParentComp from "./Component/ParentComp";
 import RefsDemo from "./Component/RefsDemo";
+import FocusInput from "./Component/FocusInput";
+import FRParentInput from "./Component/FRParentInput";
 
 // Functional Component
 function GreetComponent() {
@@ -225,7 +227,9 @@ function ParentCompComponent() {
 function RefsComponent() {
   return (
     <div>
-      <RefsDemo />
+      {/* <RefsDemo /> */}
+      {/* <FocusInput /> */}
+      <FRParentInput />
     </div>
   );
 }
