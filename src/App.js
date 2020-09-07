@@ -20,6 +20,8 @@ import Form from "./Component/Form";
 import LifecycleA from "./Component/LifecycleA";
 import FragmentDemo from "./Component/FragmentDemo";
 import Table from "./Component/Table";
+import PureComp from "./Component/PureComp";
+import ParentComp from "./Component/ParentComp";
 
 // Functional Component
 function GreetComponent() {
@@ -200,6 +202,15 @@ function TableComponent() {
   );
 }
 
+// Pure Component
+function PureComponent() {
+  return (
+    <div>
+      <PureComp />
+    </div>
+  );
+}
+
 function App() {
   return (
     <div className="App">
@@ -239,7 +250,11 @@ function App() {
 
       {/* <FragmentsDemoComponent /> */}
 
-      <TableComponent />
+      {/* <TableComponent /> */}
+
+      {/* <PureComponent /> */}
+
+      <ParentComp />
     </div>
   );
 }
