@@ -22,6 +22,7 @@ import FragmentDemo from "./Component/FragmentDemo";
 import Table from "./Component/Table";
 import PureComp from "./Component/PureComp";
 import ParentComp from "./Component/ParentComp";
+import RefsDemo from "./Component/RefsDemo";
 
 // Functional Component
 function GreetComponent() {
@@ -220,6 +221,15 @@ function ParentCompComponent() {
   );
 }
 
+// Refs Component
+function RefsComponent() {
+  return (
+    <div>
+      <RefsDemo />
+    </div>
+  );
+}
+
 function App() {
   return (
     <div className="App">
@@ -264,8 +274,9 @@ function App() {
       {/* <PureComponent /> */}
 
       {/* <ParentCompComponent /> */}
-      
-      
+
+      <RefsComponent />
+    </div>
   );
 }
 
