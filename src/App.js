@@ -27,6 +27,8 @@ import FocusInput from "./Component/FocusInput";
 import FRParentInput from "./Component/FRParentInput";
 import Hero from "./Component/Hero";
 import ErrorBoundary from "./Component/ErrorBoundary";
+import ClickCounter from "./Component/ClickCounter";
+import HoverCounter from "./Component/HoverCounter";
 
 // Functional Component
 function GreetComponent() {
@@ -255,6 +257,16 @@ function HeroComponent() {
   );
 }
 
+// Click counter component
+function ClickCounterComponent() {
+  return (
+    <div>
+      <ClickCounter name='Billy'/>
+      <HoverCounter />
+    </div>
+  );
+}
+
 function App() {
   return (
     <div className="App">
@@ -302,7 +314,9 @@ function App() {
 
       {/* <RefsComponent /> */}
 
-      <HeroComponent />
+      {/* <HeroComponent /> */}
+
+      <ClickCounterComponent />
     </div>
   );
 }
