@@ -25,6 +25,8 @@ import ParentComp from "./Component/ParentComp";
 import RefsDemo from "./Component/RefsDemo";
 import FocusInput from "./Component/FocusInput";
 import FRParentInput from "./Component/FRParentInput";
+import Hero from "./Component/Hero";
+import ErrorBoundary from "./Component/ErrorBoundary";
 
 // Functional Component
 function GreetComponent() {
@@ -234,6 +236,25 @@ function RefsComponent() {
   );
 }
 
+// Error boundary
+function HeroComponent() {
+  return (
+    <div>
+      <ErrorBoundary>
+        <Hero heroName="Batman"></Hero>
+      </ErrorBoundary>
+
+      <ErrorBoundary>
+        <Hero heroName="Superman"></Hero>
+      </ErrorBoundary>
+
+      <ErrorBoundary>
+        <Hero heroName="Joker"></Hero>
+      </ErrorBoundary>
+    </div>
+  );
+}
+
 function App() {
   return (
     <div className="App">
@@ -279,7 +300,9 @@ function App() {
 
       {/* <ParentCompComponent /> */}
 
-      <RefsComponent />
+      {/* <RefsComponent /> */}
+
+      <HeroComponent />
     </div>
   );
 }
