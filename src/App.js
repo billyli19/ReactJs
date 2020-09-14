@@ -29,6 +29,10 @@ import Hero from "./Component/Hero";
 import ErrorBoundary from "./Component/ErrorBoundary";
 import ClickCounter from "./Component/ClickCounter";
 import HoverCounter from "./Component/HoverCounter";
+import ClickCounterTwo from "./Component/ClickCounterTwo";
+import HoverCounterTwo from "./Component/HoverCounterTwo";
+import User from "./Component/User";
+import CounterContainer from "./Component/CounterContainer";
 
 // Functional Component
 function GreetComponent() {
@@ -76,7 +80,7 @@ function MessageComponent() {
   );
 }
 
-// setState Compoment
+// setState Component
 function CounterComponent() {
   return (
     <div>
@@ -85,7 +89,7 @@ function CounterComponent() {
   );
 }
 
-// Event Handeling
+// Event Handling
 function FunctionClickComponent() {
   return (
     <div>
@@ -261,8 +265,31 @@ function HeroComponent() {
 function ClickCounterComponent() {
   return (
     <div>
-      <ClickCounter name='Billy'/>
+      <ClickCounter name="Billy" />
       <HoverCounter />
+    </div>
+  );
+}
+
+// Click counter component
+function ClickCounterTwoComponent() {
+  return (
+    <div>
+      {/* <ClickCounterTwo />
+      <HoverCounterTwo />
+      <User render={(isLoggedIn) => (isLoggedIn ? "Billy" : "Guest")} /> */}
+
+      <CounterContainer
+        render={(count, incrementCount) => (
+          <ClickCounterTwo count={count} incrementCount={incrementCount} />
+        )}
+      />
+
+      <CounterContainer
+        render={(count, incrementCount) => (
+          <HoverCounterTwo count={count} incrementCount={incrementCount} />
+        )}
+      />
     </div>
   );
 }
@@ -316,7 +343,9 @@ function App() {
 
       {/* <HeroComponent /> */}
 
-      <ClickCounterComponent />
+      {/* <ClickCounterComponent /> */}
+
+      <ClickCounterTwoComponent />
     </div>
   );
 }
